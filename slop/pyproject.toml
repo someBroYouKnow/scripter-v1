@@ -1,0 +1,21 @@
+[project]
+name = "slop"
+version = "0.1.0"
+description = "Audio/Video Transcriber - Desktop application for transcribing audio and video files using speech-to-text models"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "PyQt6>=6.5.0",
+    "openai-whisper>=20231117",
+    "google-cloud-speech>=2.19.0",
+    "pydub>=0.25.1",
+    "librosa>=0.10.1",
+    "soundfile>=0.12.1",
+    "moviepy>=1.0.3",
+    "ffmpeg-python>=0.2.0",
+    "yt-dlp>=2023.10.7",
+    "pyaudio>=0.2.13",
+    "sounddevice>=0.4.6",
+    "cryptography>=41.0.0",
+    "python-dotenv>=1.0.0",
+]
