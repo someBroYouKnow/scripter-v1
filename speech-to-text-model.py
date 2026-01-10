@@ -1,4 +1,8 @@
 import nemo.collections.asr as nemo_asr
+from utils.audio_processor import convert_m4a_to_mono
+
+## convert any required audio files if necessary
+convert_m4a_to_mono('assets/audio/Recording.m4a', 'assets/audio/Recording.wav')
 
 print(f"Initialising speech to text model...")
 

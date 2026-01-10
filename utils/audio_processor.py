@@ -1,6 +1,11 @@
 from pydub import AudioSegment
+import os
 
 def convert_m4a_to_mono(input_path: str, output_path: str):
+
+    # check if the input file exists
+    if not os.path.exists(input_path):
+        raise FileNotFoundError(f"Input file not found: {input_path}")
     # Load the M4A file
     audio = AudioSegment.from_file(input_path, format="m4a")
 
